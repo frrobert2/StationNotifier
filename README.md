@@ -8,8 +8,9 @@ My version of the script, notificatorossl, uses openssl rather than curl.
 
 I did add an option to run amfora if you have a notification.  I have not been ablle to test it yet.
 
+Besides changing
 
-Original Reademe from Original Version
+### Original Reademe from Original Version
 
 # StationNotifier
 Simple CLI notifier for Station
