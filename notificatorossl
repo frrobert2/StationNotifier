@@ -37,7 +37,7 @@ do
     if [[ $notifications -gt $lasttime ]]; then
 	    new=$(expr $notifications - $lasttime)
         echo -en "\007"
-        echo "You have $notifications and $new new notifications!"
+        echo "You have $notifications notifications and $new new notifications!"
         read -p "Press enter to continue, or either type amfora or lagrange to go to notifications" answer
 	case $answer in
 		amfora)
