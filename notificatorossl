@@ -38,7 +38,7 @@ do
         echo "You have new notifications!"
         read -p "Press enter to continue or amfora to go to notifications" answer
 	case $answer in
-		amfora) $(amfora gemini://station.martinrue.com/frrobert)
+		amfora) $(amfora $url)
 			;;
 	esac
 
