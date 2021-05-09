@@ -2,8 +2,8 @@
 # notifitcatorossl is a fork of https://github.com/ThatsRedacted/StationNotifier
 # This program uses openssl rather than curl to connect to a gemini site`
 
-key='/home/frrobert/.config/amfora/7debbb3fae40dbe77746aa465300febaec5abb778faa8a550f8e5924f0977983.key'
-cert='/home/frrobert/.config/amfora/7debbb3fae40dbe77746aa465300febaec5abb778faa8a550f8e5924f0977983.crt'
+key=''
+cert=''
 connectto=30
 
 tmpfile=$(mktemp /tmp/not.XXXXXX)
