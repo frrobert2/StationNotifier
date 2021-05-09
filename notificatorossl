@@ -5,6 +5,7 @@
 key='/home/frrobert/.config/amfora/7debbb3fae40dbe77746aa465300febaec5abb778faa8a550f8e5924f0977983.key'
 cert='/home/frrobert/.config/amfora/7debbb3fae40dbe77746aa465300febaec5abb778faa8a550f8e5924f0977983.crt'
 connectto=30
+howoften=
 
 tmpfile=$(mktemp /tmp/not.XXXXXX)
 		 url="gemini://station.martinrue.com/frrobert"
@@ -36,12 +37,21 @@ do
     if [[ $notifications -gt $lasttime ]]; then
         echo -en "\007"
         echo "You have new notifications!"
-        read -p "Press enter to continue or amfora to go to notifications" answer
+        read -p "Press enter to continue, or either type amfora or lagrange to go to notifications" answer
 	case $answer in
-		amfora) $(amfora $url)
+		amfora)
+		       amfora $url
+		       clear
+		      ;;
+		lagrange)
+			lagrange $url
+			clear
+			;;
+		*)
+			clear
 			;;
 	esac
-
+echo "waiting for new notifications"
         lasttime=$notifications
         unset my_array
     fi
