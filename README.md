@@ -1,3 +1,16 @@
+This is a fork of https://github.com/ThatsRedacted/StationNotifier
+
+The orginal version uses a version of curl that supported gemini.  
+
+Due to library issues on Ubuntu I could not get the version of curl that supports Gemini to run correctly.
+
+My version of the script, notificatorossl, uses openssl rather than curl.
+
+I did add an option to run amfora if you have a notification.  I have not been ablle to test it yet.
+
+
+Original Reademe from Original Version
+
 # StationNotifier
 Simple CLI notifier for Station
 
